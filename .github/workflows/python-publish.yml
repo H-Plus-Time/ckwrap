@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install cibuildwheel
-        run: pipx install cibuildwheel==2.21.3
+        run: pipx install cibuildwheel==2.22.0
       - id: set-matrix
         run: |
           MATRIX=$(
@@ -47,7 +47,7 @@ jobs:
         with:
           platforms: all
 
-      - uses: pypa/cibuildwheel@v2.21.3
+      - uses: pypa/cibuildwheel@v2.22.0
         with:
           only: ${{ matrix.only }}
           

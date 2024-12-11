@@ -28,3 +28,5 @@ packages = ["ckwrap"]
 
 [tool.cibuildwheel]
 skip = ["pp*", "cp36-*"]
+enable = ["cpython-freethreading"]
+
